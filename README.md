@@ -5,11 +5,11 @@ Different Environment Variables for Different Vue Environments
 npm install
 
 # Step 2
-Run on development mode - npm run serve
-Go to https://localhost:8080
+Run on development mode - npm run serve  
+Go to https://localhost:8080  
 It takes in the .env.development title
 
 # Step 3
-Run on production mode - npm run build, serve -s dist
-Go to https://localhost:5000
+Run on production mode - npm run build, serve -s dist  
+Go to https://localhost:5000  
 It takes in the .env.production title
