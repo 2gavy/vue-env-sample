@@ -39,7 +39,7 @@ export default {
   },
     data() {
     return {
-      env: process.env.VUE_APP_TITLE
+      env: window.VUE_APP_FOO
     };
   },
 }

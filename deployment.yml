@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+  labels:
+    app: app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+      - name: nginx
+        image: app:1.7.9
+        env:
+        - name: VUE_APP_FOO
+          value: "FOO Production"
+        - name: VUE_APP_DOMAIN
+          value: "http://zingzai.tech"
